@@ -1,0 +1,704 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan 14 22:21:09 2019
+# Process ID: 7484
+# Current directory: C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1
+# Command line: vivado.exe -log camera_top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source camera_top_module.tcl
+# Log file: C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1/camera_top_module.vds
+# Journal file: C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source camera_top_module.tcl -notrace
+Command: synth_design -top camera_top_module -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 356.852 ; gain = 100.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'camera_top_module' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/camera_top_module.v:24]
+INFO: [Synth 8-638] synthesizing module 'camera_top' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/camera_top.v:3]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/debouce.v:12]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/debouce.v:12]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:22]
+INFO: [Synth 8-4471] merging register 'vga_green_reg[3:0]' into 'vga_red_reg[3:0]' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:62]
+INFO: [Synth 8-4471] merging register 'vga_blue_reg[3:0]' into 'vga_red_reg[3:0]' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:63]
+WARNING: [Synth 8-6014] Unused sequential element vga_green_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:62]
+WARNING: [Synth 8-6014] Unused sequential element vga_blue_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:63]
+INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:22]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1/.Xil/Vivado-7484-LAPTOP-N0SGJDBA/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1/.Xil/Vivado-7484-LAPTOP-N0SGJDBA/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'rgb2hls' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/rgb_hls.v:5]
+INFO: [Synth 8-256] done synthesizing module 'rgb2hls' (4#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/rgb_hls.v:5]
+INFO: [Synth 8-638] synthesizing module 'sobel_bitwise' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:4]
+WARNING: [Synth 8-3936] Found unconnected internal register 'reg_result_reg' and it is trimmed from '8' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:42]
+INFO: [Synth 8-256] done synthesizing module 'sobel_bitwise' (5#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:4]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_controller.v:3]
+	Parameter camera_address bound to: 8'b01000010 
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/i2c_sender.v:3]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (6#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/i2c_sender.v:3]
+INFO: [Synth 8-638] synthesizing module 'ov7670_register' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_register.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_register' (7#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_register.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (8#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_controller.v:3]
+INFO: [Synth 8-638] synthesizing module 'camera_capture' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_capture.v:3]
+INFO: [Synth 8-256] done synthesizing module 'camera_capture' (9#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_capture.v:3]
+INFO: [Synth 8-638] synthesizing module 'clocking' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:85]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:119]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:130]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:193]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:199]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (10#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/imports/new/clock_divider.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'camera_top' (11#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/camera_top.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'led' does not match port width (8) of module 'camera_top' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/camera_top_module.v:52]
+INFO: [Synth 8-256] done synthesizing module 'camera_top_module' (12#1) [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/camera_top_module.v:24]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[11]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[10]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[9]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[8]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[3]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[2]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[1]
+WARNING: [Synth 8-3331] design vga has unconnected port frame_pixel[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 423.230 ; gain = 167.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 423.230 ; gain = 167.117
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1/.Xil/Vivado-7484-LAPTOP-N0SGJDBA/dcp1/blk_mem_gen_0_in_context.xdc] for cell 'camera_top_module/bm'
+Finished Parsing XDC File [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1/.Xil/Vivado-7484-LAPTOP-N0SGJDBA/dcp1/blk_mem_gen_0_in_context.xdc] for cell 'camera_top_module/bm'
+Parsing XDC File [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc:69]
+Finished Parsing XDC File [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/camera_top_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/constrs_1/new/zedboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/camera_top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 822.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 830.652 ; gain = 574.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 830.652 ; gain = 574.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for camera_top_module/bm. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 830.652 ; gain = 574.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element c_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/debouce.v:19]
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:43]
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'w9_reg' and it is trimmed from '27' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'w8_reg' and it is trimmed from '27' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 'w7_reg' and it is trimmed from '27' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'w3_reg' and it is trimmed from '27' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'w2_reg' and it is trimmed from '27' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:57]
+WARNING: [Synth 8-3936] Found unconnected internal register 'w1_reg' and it is trimmed from '27' to '4' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:32]
+INFO: [Synth 8-5545] ROM "sioc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "finished" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "sreg" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_register.v:26]
+WARNING: [Synth 8-6014] Unused sequential element address_next_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_capture.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'S_reg' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/rgb_hls.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 911.484 ; gain = 655.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register lb1_reg [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:59]
+INFO: [Synth 8-3538] Detected potentially large (wide) register lb2_reg [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:62]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   7 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	            17280 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               27 Bit    Registers := 3     
+	               19 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 27    
+	   3 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 4     
+	   7 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 61    
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register lb1_reg [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:59]
+INFO: [Synth 8-3538] Detected potentially large (wide) register lb2_reg [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:62]
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module rgb2hls 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 25    
+	   3 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 4     
+	   7 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 56    
+	   3 Input      1 Bit        Muxes := 6     
+Module sobel_bitwise 
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input      8 Bit       Adders := 1     
++---Registers : 
+	            17280 Bit    Registers := 2     
+	               27 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module i2c_sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+Module ov7670_register 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ov7670_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module camera_capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'camera_top_module/sobel_bitwise_1/lb2_reg' and it is trimmed from '17280' to '17257' bits. [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/sobel.v:62]
+INFO: [Synth 8-5546] ROM "camera_top_module/btn_db/o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "camera_top_module/vga1/vCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "camera_top_module/camera_controller/i2c/sioc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "camera_top_module/camera_controller/rg/finished" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element camera_top_module/btn_db/c_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/debouce.v:19]
+WARNING: [Synth 8-6014] Unused sequential element camera_top_module/vga1/address_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/vga.v:43]
+WARNING: [Synth 8-6014] Unused sequential element camera_top_module/camera_controller/rg/address_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_register.v:26]
+WARNING: [Synth 8-6014] Unused sequential element camera_top_module/capture/address_next_reg was removed.  [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/ov7670_capture.v:35]
+WARNING: [Synth 8-3917] design camera_top_module has port ov7670_reset driven by constant 1
+WARNING: [Synth 8-3917] design camera_top_module has port ov7670_pwdn driven by constant 0
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\camera_top_module/camera_controller/i2c/data_sr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[0]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[1]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[2]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[3]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[4]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[5]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[6]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[7]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[8]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[9]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'camera_top_module/sobel_bitwise_1/bram_data_reg[10]' (FDR) to 'camera_top_module/sobel_bitwise_1/bram_data_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/rgb2hls_1/S_reg[2]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/rgb2hls_1/S_reg[1]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/rgb2hls_1/S_reg[0]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/camera_controller/i2c/sioc_reg) is unused and will be removed from module camera_top_module.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ov7670_sioc with 1st driver pin 'camera_top_module/camera_controller/i2c/sioc_reg/Q' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/i2c_sender.v:53]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net ov7670_sioc with 2nd driver pin 'ov7670_sioc' [C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.srcs/sources_1/new/camera_top_module.v:24]
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/capture/d_latch_reg[11]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/rgb2hls_1/S_out_reg[2]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/rgb2hls_1/S_out_reg[1]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/rgb2hls_1/S_out_reg[0]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17259]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17258]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17257]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17232]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17231]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17230]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17205]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17204]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17203]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17178]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17177]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17176]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17151]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17150]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17149]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17124]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17123]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17122]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17097]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17096]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17095]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17070]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17069]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17068]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17043]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17042]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17041]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17016]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17015]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[17014]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16989]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16988]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16987]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16962]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16961]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16960]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16935]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16934]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16933]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16908]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16907]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16906]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16881]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16880]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16879]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16854]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16853]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16852]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16827]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16826]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16825]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16800]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16799]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16798]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16773]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16772]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16771]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16746]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16745]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16744]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16719]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16718]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16717]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16692]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16691]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16690]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16665]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16664]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16663]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16638]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16637]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16636]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16611]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16610]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16609]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16584]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16583]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16582]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16557]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16556]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16555]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16530]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16529]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16528]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16503]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16502]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16501]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16476]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16475]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16474]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16449]) is unused and will be removed from module camera_top_module.
+WARNING: [Synth 8-3332] Sequential element (camera_top_module/sobel_bitwise_1/lb1_reg[16448]) is unused and will be removed from module camera_top_module.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 944.008 ; gain = 687.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+---------------------------------------------+---------------+----------------+
+|Module Name       | RTL Object                                  | Depth x Width | Implemented As | 
++------------------+---------------------------------------------+---------------+----------------+
+|camera_top_module | camera_top_module/camera_controller/rg/sreg | 32x16         | LUT            | 
++------------------+---------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1061.688 ; gain = 805.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1069.805 ; gain = 813.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|camera_top_module | camera_top_module/sobel_bitwise_1/lb1_reg[17256]        | 640    | 4     | NO           | NO                 | YES               | 0      | 80      | 
+|camera_top_module | camera_top_module/sobel_bitwise_1/w5_reg[7]             | 642    | 1     | NO           | NO                 | YES               | 0      | 21      | 
+|camera_top_module | camera_top_module/sobel_bitwise_1/w6_reg[26]            | 643    | 19    | NO           | NO                 | NO                | 0      | 399     | 
+|camera_top_module | camera_top_module/sobel_bitwise_1/w7_reg[3]             | 641    | 4     | NO           | NO                 | YES               | 0      | 80      | 
+|camera_top_module | camera_top_module/camera_controller/i2c/data_sr_reg[26] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |BUFG          |     4|
+|3     |CARRY4        |    18|
+|4     |LUT1          |    11|
+|5     |LUT2          |    12|
+|6     |LUT3          |    52|
+|7     |LUT4          |    54|
+|8     |LUT5          |    58|
+|9     |LUT6          |   142|
+|10    |MMCME2_ADV    |     1|
+|11    |MUXF7         |    24|
+|12    |MUXF8         |     2|
+|13    |SRL16E        |     1|
+|14    |SRLC32E       |   580|
+|15    |FDRE          |   278|
+|16    |FDSE          |    47|
+|17    |LDC           |     1|
+|18    |IBUF          |    12|
+|19    |IBUFG         |     1|
+|20    |OBUF          |    17|
+|21    |OBUFT         |     1|
++------+--------------+------+
+
+Report Instance Areas: 
++------+----------------------+------------------+------+
+|      |Instance              |Module            |Cells |
++------+----------------------+------------------+------+
+|1     |top                   |                  |  1328|
+|2     |  camera_top_module   |camera_top        |  1297|
+|3     |    btn_db            |debounce          |    38|
+|4     |    camera_controller |ov7670_controller |   215|
+|5     |      i2c             |i2c_sender        |   158|
+|6     |      rg              |ov7670_register   |    55|
+|7     |    capture           |camera_capture    |   242|
+|8     |    clock_divider     |clocking          |     5|
+|9     |    rgb2hls_1         |rgb2hls           |    26|
+|10    |    sobel_bitwise_1   |sobel_bitwise     |   673|
+|11    |    vga1              |vga               |    86|
++------+----------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1098.910 ; gain = 842.797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 16654 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1098.910 ; gain = 435.375
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1098.910 ; gain = 842.797
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUFG => IBUF: 1 instances
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 140 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1098.910 ; gain = 854.266
+INFO: [Common 17-1381] The checkpoint 'C:/Users/akif2/Desktop/depo/Lisans Dersleri/bitirme/bitirme_camera/camera_verilog1/camera_verilog.runs/synth_1/camera_top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file camera_top_module_utilization_synth.rpt -pb camera_top_module_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1098.910 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 14 22:22:25 2019...
